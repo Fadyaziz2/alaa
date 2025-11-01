@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    android:layoutDirection="ltr"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.sideMenu.complains.ComplainsAndSuggestionsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Header-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:background="@drawable/top_corner_page"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_86sdp">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/complains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:src="@drawable/back"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:hint="@string/name"
+            android:autofillHints="name"
+            android:inputType="text"
+            android:textColor="@color/primary"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:textColorHint="@color/primary"
+            android:background="@drawable/placeholder_background"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            android:layout_margin="@dimen/_18sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:hint="@string/phone"
+            android:textColorHint="@color/primary"
+            android:inputType="number"
+            android:textColor="@color/primary"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:background="@drawable/placeholder_background"
+            app:layout_constraintTop_toBottomOf="@id/et_name"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TextFields"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/et_notes"
+            android:hint="@string/notes"
+            android:gravity="start"
+            android:textColorHint="@color/primary"
+            android:inputType="textMultiLine"
+            android:textColor="@color/primary"
+            android:paddingVertical="@dimen/_6sdp"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:background="@drawable/placeholder_background"
+            app:layout_constraintTop_toBottomOf="@id/et_phone"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_154sdp"
+            tools:ignore="TextFields"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:text="@string/send"
+            android:id="@+id/send_comp"
+            android:background="@drawable/btn_background"
+            android:layout_margin="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/loading"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

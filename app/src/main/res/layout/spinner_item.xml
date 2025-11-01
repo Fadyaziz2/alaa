@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/white"
+    android:layout_margin="@dimen/_2sdp"
+    android:background="@drawable/bg_spinner_numbers_list"
+    android:layout_height="@dimen/_46sdp">
+    <ImageView
+        android:layout_width="@dimen/_31sdp"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/_31sdp"
+        android:background="@drawable/dropdown"/>
+    <TextView
+        android:id="@+id/spinner_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        android:layout_weight="1"
+        android:textSize="@dimen/_12ssp"
+        android:text="خدمات فودافون كاش"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

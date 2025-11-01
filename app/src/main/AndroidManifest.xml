@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <!-- For Android 9 and below -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <!-- Required for taking pictures -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- Required for Android 13+ -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"
+        tools:ignore="SelectedPhotoAccess" />
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/looogo"
+        android:label="@string/app_name"
+        android:name=".util.AlaaApp"
+        android:roundIcon="@id/iv_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.BlankActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.my_accounts_and_sale.MyAccountsAndSaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.importantNumbers.details_important_number.DetialsImportantNumbers"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.importantNumbers.numberDetails.NumberServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.suggestPair.SuggestBrand.SuggestBrandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.home.search_comp.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.suggestPair.SuggestModel.SuggestModelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.suggestPair.SuggestType.SuggestTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.pairs.pairType.model.PairModelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.pairs.pairType.brand.PairBrandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.pairs.pairType.PairTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.suggestPair.SuggestPairActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.pairs.PairsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.features.importantNumbers.ImportantNumbersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.registration.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.registration.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.home.sideMenu.complains.ComplainsAndSuggestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.home.sideMenu.termsAndConditionsAndKnowMore.KnowMoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.home.sideMenu.termsAndConditionsAndKnowMore.TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.home.sideMenu.contactUs.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.onboarding.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AlaaGallo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.alaa.alaagallo.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

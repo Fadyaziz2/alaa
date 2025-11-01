@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    android:layoutDirection="ltr"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.sideMenu.termsAndConditionsAndKnowMore.TermsAndConditionsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Header-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:background="@drawable/top_corner_page"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_86sdp">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/terms_and_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:src="@drawable/back"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toBottomOf="@id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/logo"
+                android:layout_width="@dimen/_117sdp"
+                android:layout_height="@dimen/_135sdp"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/our_service"
+                android:text="@string/our_services"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintTop_toBottomOf="@id/iv_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/our_service_details"
+                android:text="@string/our_services_details"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@color/primary"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                app:layout_constraintTop_toBottomOf="@id/our_service"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/use"
+                android:text="@string/use"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/our_service_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/use_details"
+                android:text="@string/use_details"
+                android:textColor="@color/primary"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/cancel"
+                android:text="@string/cancel"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_18sdp"
+                app:layout_constraintTop_toBottomOf="@id/use_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/cancel_details"
+                android:text="@string/cancel_details"
+                android:textColor="@color/primary"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                app:layout_constraintTop_toBottomOf="@id/cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

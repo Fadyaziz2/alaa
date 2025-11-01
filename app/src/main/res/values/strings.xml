@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">علاء جلو</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Onboarding-->
+    <string name="next">Next</string>
+    <string name="start">Start Now</string>
+    <string name="first_onboarding">يحتوي التطبيق على توافقات
+باغة - تاتش - شاشات - اسكرينات - جرابات - بطاريات - IC - منفذ الشحن - بصمات - فلاتة شحن</string>
+
+    <!--Home-->
+    <string name="welcome">Welcome</string>
+
+    <!--Side Menu-->
+    <string name="logout">تسجيل الخروج</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="know_more">اعرف اكثر عن التطبيق</string>
+    <string name="terms_and_conditions">الشروط والاحكام</string>
+    <string name="complains">الشكاوى والمقترحات</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="rate_app">تقييم التطبيق</string>
+
+    <!--Know More-->
+    <string name="allow">يتيح لك التطبيق معرفة جميع التوافقات واقتراح توافقات جديدة في حالة عدم تواجدها في التطبيق</string>
+    <string name="case_1">في حالة اردت البحث عن توافق معين:</string>
+    <string name="case_1_details">
+        1 - ادخل على خانة توافقات من الصفحة الرئيسية.
+        \n
+2 - اختر من الاصناف النوع الذي تريد معرفة التوافق فيه.
+\n
+3 - قم باختيار الماركة والمودل المانسبين واضغط بحث.
+        \n
+4 - سوف تظهر لك النتائج المطلوبة.
+    </string>
+    <string name="case_2">في حالة اردت اقتراح توافق جديد:</string>
+    <string name="case_2_details">
+        1 - ادخل على خانة اقترح توافق.
+        \n
+2 - ادخل الماركة والمودل والصنف المناسب.
+        \n
+3 - ادخل النوع المناسب للتوافق.
+        \n
+4- سوف يتم اختبار التوافق من الادارة واضافته للتطبيق بعد التأكد منه.</string>
+
+    <!--Terms and conditions-->
+    <string name="our_services">خدماتنا:</string>
+    <string name="our_services_details">يتيح لك هذا التطبيق الاستفادة بخدمة معرفة التوافقات واقتراح توافقات جديدة وسوف يتم ادخال خدمات اخرى لاحقا.</string>
+    <string name="use">استخدامك للخدمة:</string>
+    <string name="use_details">تستطيع ان تستفيد بالخدمات من خلال انشاء حساب على التطبيق وذلك باشتراك سنوي بالتنسيق مع الادارة.  مع العلم انه سوف يتم ايقاف الخدمة في حالة عدم دفع الاشتراك.</string>
+    <string name="cancel">الغاء الخدمة:</string>
+    <string name="cancel_details">يمكنك الغاء اشتراكك في الخدمة من خلال التواصل مع الادارة باستخدام الارقام المتواجدة على التطبيق.</string>
+
+    <!--Complains-->
+    <string name="name">الاسم</string>
+    <string name="phone">رقم الموبايل</string>
+    <string name="notes">ملاحظات</string>
+    <string name="send">ارسال</string>
+
+    <!--Pairs-->
+    <string name="pairs">التوافقات</string>
+    <string name="search">بحث</string>
+
+    <!--Pair type-->
+    <string name="choose_brand">اختر الماركة</string>
+    <string name="choose_model">اختر الموديل</string>
+
+    <!--Brand-->
+    <string name="brand">الماركة</string>
+
+    <!--Model-->
+    <string name="model">الموديل</string>
+
+    <!--Pair result-->
+    <string name="confirmed_pair">متطابقة</string>
+    <string name="not_confirmed_pair">توافق غير مؤكد</string>
+
+    <!--Suggest pair-->
+    <string name="suggest_pair">اقترح توافق</string>
+    <string name="choose_type">اختر الصنف</string>
+    <string name="pair">التوافق</string>
+    <string name="send_suggestion">ارسال الاقتراح</string>
+    <string name="types">الاصناف</string>
+
+    <!--Important Numbers-->
+    <string name="important_numbers">ارقام تهمك</string>
+    <string name="search_for_service">ابحث عن الخدمة</string>
+
+    <!--Registration-->
+    <string name="create_account">Create a new account</string>
+    <string name="email">Email</string>
+    <string name="name_register">Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="have_account">Already have an account? <b>Login</b></string>
+    <string name="sign_up">Sign up</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="dont_have_account">Don’t have an account? <b>Sign up</b></string>
+    <string name="login">Login</string>
+    <string name="no_data">No Data</string>
+    <string name="pair_name">اسم التوافق</string>
+    <string name="accounts">الحسابات</string>
+    <string name="sales">المبيعات</string>
+
+</resources>
