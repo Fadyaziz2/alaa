@@ -2,8 +2,10 @@ package com.alaa.alaagallo.view.my_accounts_and_sale.navigation
 
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.navArgument
 import com.alaa.alaagallo.util.LocalNavigationProvider
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.accounts.accountsRoute
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.add_account_client.addAccountClientRoute
@@ -17,6 +19,9 @@ import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptio
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.customers.CustomersScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.damaged.DamagedScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.inventory.InventoryScreen
+import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.reports.ReportDetailsScreen
+import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.reports.ReportType
+import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.reports.ReportsScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.sales.SalesScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.suppliers.SuppliersScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.user_details.userDetailsRoute
@@ -61,6 +66,29 @@ fun AccountsNavGraph() {
         }
         composable(Screen.Costs.route) {
             CostScreen()
+        }
+        composable(Screen.Reports.route) {
+            ReportsScreen()
+        }
+        composable(
+            route = Screen.ReportDetails.route,
+            arguments = listOf(
+                navArgument(Screen.ReportDetails.REPORT_TYPE_ARG) {
+                    type = NavType.StringType
+                },
+                navArgument(Screen.ReportDetails.INVOICE_NUMBER_ARG) {
+                    type = NavType.StringType
+                    defaultValue = ""
+                    nullable = true
+                }
+            )
+        ) { backStackEntry ->
+            val reportTypeId = backStackEntry.arguments?.getString(Screen.ReportDetails.REPORT_TYPE_ARG)
+            val invoiceNumber = backStackEntry.arguments?.getString(Screen.ReportDetails.INVOICE_NUMBER_ARG).orEmpty()
+            ReportDetailsScreen(
+                reportType = ReportType.fromId(reportTypeId),
+                invoiceNumber = invoiceNumber.takeIf { it.isNotBlank() }
+            )
         }
         addAccountClientRoute()
         editAccountClientRoute()

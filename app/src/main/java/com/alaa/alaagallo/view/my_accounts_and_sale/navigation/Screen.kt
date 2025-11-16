@@ -1,5 +1,6 @@
 package com.alaa.alaagallo.view.my_accounts_and_sale.navigation
 
+import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.reports.ReportType
 
 sealed class Screen(
     val route: String,
@@ -17,6 +18,16 @@ sealed class Screen(
     data object Cashier : Screen("cashier")
     data object Damaged : Screen("damaged")
     data object Costs : Screen("costs")
+    data object Reports : Screen("reports")
+    data object ReportDetails : Screen("reportDetails/{reportType}?invoiceNumber={invoiceNumber}") {
+        const val REPORT_TYPE_ARG = "reportType"
+        const val INVOICE_NUMBER_ARG = "invoiceNumber"
+
+        fun createRoute(type: ReportType, invoiceNumber: String? = null): String {
+            val baseRoute = "reportDetails/${type.id}"
+            return "$baseRoute?invoiceNumber=${invoiceNumber.orEmpty()}"
+        }
+    }
     data object AddAccountClient : Screen("addAccountClientScreen")
     data object EditAccountClient : Screen("editAccountClientScreen")
     data object EditAccountInvoice : Screen("editAccountInvoiceScreen")

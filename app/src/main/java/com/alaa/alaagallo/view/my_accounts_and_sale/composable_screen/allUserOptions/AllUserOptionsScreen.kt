@@ -124,4 +124,5 @@ private enum class Options(val title: String, @DrawableRes val image: Int, val r
         route = Screen.Damaged.route
     ),
     Costs(title = "مصروفات", image = R.drawable.costs, route = Screen.Costs.route),
+    Reports(title = "التقارير", image = R.drawable.reports_icon, route = Screen.Reports.route),
 }
