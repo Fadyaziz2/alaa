@@ -14,6 +14,7 @@ sealed class Screen(
     data object Suppliers : Screen("suppliers")
     data object Customers : Screen("customers")
     data object Inventory : Screen("inventory")
+    data object Cashier : Screen("cashier")
     data object Damaged : Screen("damaged")
     data object Costs : Screen("costs")
     data object AddAccountClient : Screen("addAccountClientScreen")

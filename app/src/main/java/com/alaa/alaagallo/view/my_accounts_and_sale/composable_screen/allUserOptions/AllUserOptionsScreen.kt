@@ -113,6 +113,11 @@ private enum class Options(val title: String, @DrawableRes val image: Int, val r
         image = R.drawable.inventory,
         route = Screen.Inventory.route
     ),
+    Cashier(
+        title = "الكاشير",
+        image = R.drawable.cashier_icon,
+        route = Screen.Cashier.route
+    ),
     Damaged(
         title = "هوالك",
         image = R.drawable.dameged,
