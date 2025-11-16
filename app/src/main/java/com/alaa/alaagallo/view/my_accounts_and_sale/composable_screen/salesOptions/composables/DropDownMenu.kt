@@ -2,6 +2,7 @@ package com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOpti
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
@@ -59,7 +60,7 @@ fun CustomDropDownMenu(
                 ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded)
             }
         )
-        ExposedDropdownMenu(
+        DropdownMenu(
             expanded = expanded,
             onDismissRequest = { expanded = false },
         ) {
@@ -115,7 +116,7 @@ fun CustomDropDownMenu(
                 ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded)
             }
         )
-        ExposedDropdownMenu(
+        DropdownMenu(
             expanded = expanded,
             onDismissRequest = { expanded = false },
         ) {
