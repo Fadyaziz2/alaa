@@ -123,6 +123,11 @@ private enum class Options(val title: String, @DrawableRes val image: Int, val r
         image = R.drawable.dameged,
         route = Screen.Damaged.route
     ),
+    BarcodePrinter(
+        title = "طباعة الباركود",
+        image = R.drawable.barcode_1,
+        route = Screen.BarcodePrinter.route
+    ),
     Costs(title = "مصروفات", image = R.drawable.costs, route = Screen.Costs.route),
     Reports(title = "التقارير", image = R.drawable.reports_icon, route = Screen.Reports.route),
 }

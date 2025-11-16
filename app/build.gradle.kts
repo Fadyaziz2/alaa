@@ -108,6 +108,8 @@ dependencies {
 
     //okhttp
     implementation(libs.okHttp)
+    implementation(libs.zxing.core)
+    implementation(libs.androidx.print)
 
     implementation(project(":domain"))
     implementation(project(":data"))

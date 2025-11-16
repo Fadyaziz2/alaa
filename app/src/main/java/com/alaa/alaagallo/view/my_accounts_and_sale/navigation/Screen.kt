@@ -17,6 +17,7 @@ sealed class Screen(
     data object Inventory : Screen("inventory")
     data object Cashier : Screen("cashier")
     data object Damaged : Screen("damaged")
+    data object BarcodePrinter : Screen("barcodePrinter")
     data object Costs : Screen("costs")
     data object Reports : Screen("reports")
     data object ReportDetails : Screen("reportDetails/{reportType}?invoiceNumber={invoiceNumber}") {
