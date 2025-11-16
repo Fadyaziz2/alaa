@@ -12,6 +12,7 @@ import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.edit_accou
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.allUserOptions.AllUserOptionsScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.allUserOptions.allUserOptionsRoute
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.buys.BuysScreen
+import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.cashier.CashierScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.costs.CostScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.customers.CustomersScreen
 import com.alaa.alaagallo.view.my_accounts_and_sale.composable_screen.salesOptions.damaged.DamagedScreen
@@ -41,6 +42,10 @@ fun AccountsNavGraph() {
         }
         composable(Screen.Inventory.route) {
             InventoryScreen()
+        }
+
+        composable(Screen.Cashier.route) {
+            CashierScreen()
         }
 
         composable(Screen.Suppliers.route) {
