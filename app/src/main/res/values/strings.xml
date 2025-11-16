@@ -102,4 +102,23 @@
     <string name="accounts">نظام التقسيط</string>
     <string name="sales">المبيعات</string>
 
+    <!--Barcode printer-->
+    <string name="barcode_print_title">طباعة الباركود</string>
+    <string name="barcode_select_product">اختر المنتج</string>
+    <string name="barcode_select_type">نوع الباركود</string>
+    <string name="barcode_quantity_label">العدد</string>
+    <string name="barcode_preview_placeholder">اختر منتجًا لعرض نموذج الباركود</string>
+    <string name="barcode_type_name_price">الاسم والسعر</string>
+    <string name="barcode_type_name_only">الاسم فقط</string>
+    <string name="barcode_print_button">طباعة الباركود</string>
+    <string name="barcode_error_select_product">برجاء اختيار منتج</string>
+    <string name="barcode_error_missing_code">المنتج المختار لا يحتوي على باركود</string>
+    <string name="barcode_error_quantity">برجاء إدخال عدد صالح</string>
+    <string name="barcode_error_max_copies">يمكن طباعة %1$d باركود كحد أقصى في المرة الواحدة</string>
+    <string name="barcode_generation_error">تعذر إنشاء صورة الباركود</string>
+    <string name="barcode_print_job_title">طباعة باركود %1$s</string>
+    <string name="barcode_reload_products">إعادة تحميل المنتجات</string>
+    <string name="barcode_products_error">تعذر تحميل المنتجات</string>
+    <string name="barcode_empty_products">لا توجد منتجات متاحة للعرض</string>
+
 </resources>

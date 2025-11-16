@@ -31,6 +31,8 @@ hiltAndroidVersion = "2.48"
 dagger2Version = "2.44"
 kotlinxCoroutinesCore = "1.7.3"
 hiltAndroidGradlePlugin = "2.48"
+zxing = "3.5.2"
+androidxPrint = "1.0.0"
 
 
 [libraries]
@@ -73,6 +75,8 @@ hiltAndroidCompiler = { group = "com.google.dagger", name = "hilt-android-compil
 dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger2Version" }
 okHttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp_version" }
 hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hiltAndroidGradlePlugin" }
+zxing-core = { module = "com.google.zxing:core", version.ref = "zxing" }
+androidx-print = { module = "androidx.print:print", version.ref = "androidxPrint" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
