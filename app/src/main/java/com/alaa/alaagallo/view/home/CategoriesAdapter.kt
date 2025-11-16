@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.alaa.alaagallo.R
 import com.alaa.alaagallo.base.AdapterToViewCallBack
 import com.alaa.alaagallo.model.home.Category
-import com.squareup.picasso.Picasso
 
 class CategoriesAdapter(private val callBack: AdapterToViewCallBack,
                         private val categoryCallback: IHome):
@@ -39,10 +38,8 @@ class CategoriesAdapter(private val callBack: AdapterToViewCallBack,
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val imageUrl = imagesList[position]
-        Picasso.get()
-            .load(imageUrl)
-            .into(holder.categoryImage)
+        val imageResId = imagesList[position]
+        holder.categoryImage.setImageResource(imageResId)
 
         holder.categoryName.text = namesList[position]
 
